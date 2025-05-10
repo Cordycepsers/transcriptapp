@@ -25,15 +25,7 @@ if [ ! -f .env ]; then
 fi
 
 # Install Node.js dependencies for webhook forwarding
-if command -v npm &> /dev/null; then
-    if [ -f package.json ]; then
-        npm install --save smee-client dotenv
-    else
-        echo "No package.json found. Skipping Node.js dependency installation."
-    fi
-else
-    echo "npm is not installed. Please install Node.js and npm to proceed."
-fi
+npm install --save smee-client dotenv
 
 # Create tests directory if it doesn't exist
 mkdir -p tests

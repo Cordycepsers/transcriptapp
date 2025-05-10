@@ -64,6 +64,6 @@ jobs:
         
     - name: Deploy webhook notification
       run: |
-        curl -X POST ${{ secrets.DEPLOY_WEBHOOK_URL }} \
+        curl -X POST https://smee.io/NXoLZTqSCKr2j4T \
         -H "Content-Type: application/json" \
         -d '{"repository": "${{ github.repository }}", "commit": "${{ github.sha }}", "ref": "${{ github.ref }}"}'

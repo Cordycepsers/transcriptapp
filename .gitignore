@@ -1,0 +1,22 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.sqlite3
+
+# Environment Variables
+.env
+
+# Logs
+*.log
+
+# Node.js
+node_modules/
+
+# Miscellaneous
+*.db
+*.DS_Store
+.idea/
+.vscode/
+*.swp
